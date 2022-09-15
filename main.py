@@ -21,10 +21,42 @@ print('Our mission is to find the treasure.')
 choice1 = input('You Are at a crossroad, where do you want to go? Type "left" or "right".').lower()
 
 if  choice1 == "left":
-    choice2 = input('You have come to a lake. There is an island in the middle of the lake. Type "wait" for wait for a boat or type "swim" for swim across').lower()
+    choice2 = input('You have come to a lake. There is an island in the middle of the lake. Type "wait" for wait for a boat or type "swim" for swim across: ').lower()
     
     if choice2 == "wait":
-        choice3 = input("You have three doors in front of you. Choose 'Red','Yellow', 'Blue'").lower()
+        choice3 = input("You have three doors in front of you. Choose 'Red','Yellow', 'Blue': ").lower()
+        if choice3 == "red":
+            print('You got the treasure')
+        else:
+            print('''
+                  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\                      
+   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\                        
+      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\                        
+         \\\\\\\\\\\\\\\\\\\\\\\\\\\\\                          
+           \\\\\\\\\\\\\\\\\\\\\\\\\\                           
+              \\\\\\\\\\\\\\\\\\\\\                             
+                 \\\\\\\\\\\\\\\\\                              
+                   \\\\\\\\\\\\\\                               
+                   \\\\\\\\\\\\\                                
+                   \\\\\\\\\\\\                                 
+                  \\\\\\\\\\\\                                  
+                 \\\\\\\\\\\\                                   
+                \\\\\\\\\\\\                                    
+               \\\\\\\\\\\\                                     
+              \\\\\\\\\\\\                                      
+              \\\\\\\\\\\\                                      
+         `     \\\\\\\\\\\\      `    `                         
+            *    \\\\\\\\\\\\  *   *                            
+     `    *    *   \\\\\\\\\\\\   *  *   `                      
+             *   *   \\\\\\\\\\  *                              
+          `    *   * \\\\\\\\\ *   *   `                        
+       `    `     *  \\\\\\\\   *   `_____                      
+             \ \ \ * \\\\\\\  * /  /\`````\                    
+           \ \ \ \  \\\\\\  / / / /  \`````\                    
+         \ \ \ \ \ \\\\\\ / / / / |[] | [] |
+         
+         You are in a trap
+                  ''')    
     else:
         print('''
                                 (..       \_    ,  |\  /|
@@ -75,7 +107,7 @@ else:
      '.'| /       || \ |
      | /|.'       '.l \\_
      
-     Ops! You are dead! He ate you.
+     Opps! You are dead! He ate you.
           ''')    
     
 
